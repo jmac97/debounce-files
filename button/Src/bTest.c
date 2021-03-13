@@ -15,6 +15,8 @@ uint8_t holdVal = 0;
 uint8_t lastKeyCode = 0x0;
 uint8_t keyProcessed = false;
 
+uint8_t pinState = 1;
+
 uint8_t GetButtonVal(void) 
 {
   uint8_t bVal = 0x0;
@@ -32,12 +34,16 @@ uint8_t ProcessKeyCode(uint8_t val) {
     switch (holdVal) {
       case 1:
         pressCounter++;
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, pinState);
+        pinState = !pinState;
         break;
       case 2:
         holdCounter++;
         break;
       case 3:
         repeatCounter++;
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, pinState);
+        pinState = !pinState;
         break;
     }
     break;
