@@ -46,9 +46,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern uint8_t tenMsFlag;
-
-uint8_t volatile count = 0;
+//extern uint8_t tenMsFlag;
 
 /* USER CODE END PV */
 
@@ -80,6 +78,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  ButtonInit(GPIOC, GPIO_PIN_13);
 
   /* USER CODE END Init */
 
@@ -102,46 +101,8 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-        if (tenMsFlag) {
-      tenMsFlag = false;
-      keyCode = GetButtonVal();
-      
-      if (KEY_PRESSED) {
-        if (keyCode == lastKeyCode) {
-          if (buttonCounter != 0) {
-              buttonCounter--;
-          } else {
-              if (buttonHoldCounter <= LONG_HOLD_TIME) {
-                buttonHoldCounter++;
-              } else {
-                  buttonRepeatCounter--;
-                  if (buttonRepeatCounter == 0) {
-                    holdVal = LONG_HOLD;
-                    ProcessKeyCode(keyCode);
-                    buttonRepeatCounter = REPEAT_TIME;
-                    holdVal = 0;
-                  }
-                }
-            }
-          } else {
-            lastKeyCode = keyCode;
-          }
-      } else {
-        if (buttonHoldCounter >= SHORT_HOLD_TIME && buttonHoldCounter <= LONG_HOLD_TIME) {
-          holdVal = SHORT_HOLD;
-        } else if (buttonCounter == 0 && buttonHoldCounter < SHORT_HOLD_TIME) {
-          holdVal = PRESS;
-        } else {
-          holdVal = 0;
-        }
-        
-        ProcessKeyCode(lastKeyCode);
-        buttonCounter = DEBOUNCE_NUMBER;
-        buttonHoldCounter = 0;
-        buttonRepeatCounter = REPEAT_TIME;
-      }
-    }
+    /* USER CODE BEGIN 3 */     
+      PollKey();
   }
   /* USER CODE END 3 */
 }

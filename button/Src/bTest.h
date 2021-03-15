@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include "stm32g070xx.h"
 
 #define KEY_PRESSED keyCode != 0x00
 #define DEBOUNCE_NUMBER 5
@@ -25,3 +26,5 @@ uint8_t GetButtonVal(void);
 uint8_t ValidKeyCode(uint8_t val);
 uint8_t ProcessKeyCode(uint8_t val);
 void ProcessKeyHold(uint8_t val);
+void ButtonInit(GPIO_TypeDef* port, uint16_t pin);
+void PollKey(void);

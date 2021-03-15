@@ -18,6 +18,11 @@ bTest.pbi: \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stddef.h \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h \
+  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h \
+  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h \
+  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h \
+  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Inc\stm32g0xx_hal_conf.h \
+  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Inc\main.h \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Include\mpu_armv7.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\iccarm_builtin.h \
@@ -26,11 +31,6 @@ bTest.pbi: \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Include\cmsis_version.h \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Include\core_cm0plus.h \
   C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g070xx.h \
-  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h \
-  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h \
-  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h \
-  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Inc\stm32g0xx_hal_conf.h \
-  C:\Users\StevensUser\Documents\GitHub\debounce-files\button\EWARM\..\Inc\main.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
